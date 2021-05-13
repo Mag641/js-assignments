@@ -1,6 +1,6 @@
 [![Brest Rolling Scopes](http://brest.rollingscopes.com/images/logo_rs_text.svg)](http://brest.rollingscopes.com/)
 #Brest Rolling Scopes School
-## Javascript Assignments  [![Build Status](https://travis-ci.org/rolling-scopes-school/js-assignments.svg?branch=master)](https://travis-ci.org/rolling-scopes-school/js-assignments)
+## Javascript Assignments  [![Build Status](https://travis-ci.org/Mag641/js-assignments.svg?branch=master)](https://travis-ci.org/Mag641/js-assignments)
 
 Yet another javascript assignments. There are a lot of interactive javascript resources for beginners, but most of them are online and do not cover the modern programming workflow. There are some excellent training resources on github (https://github.com/rmurphey/js-assessment, https://github.com/mrdavidlaing/javascript-koans, https://github.com/vasanthk/js-bits etc) but they are not exactly simulate the everyday programming process. So the motivation of this project is to show TDD process in the wild to the beginners. Assingment tests are implemented in various ways to feel a difference and gain the experience what manner is good, what is bad and what is ugly.
 
@@ -29,7 +29,7 @@ To start javascript assignments please follow the next steps:
   git commit -m "Update the links"
   git push origin master
 ```
-* Open https://github.com/rolling-scopes-school/js-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
+* Open https://github.com/Mag641/js-assignments and test the build icon. Now it will run all tests and update status once you push changes to github. Keep this icon green!
 
 
 ### How to setup work environment
@@ -41,7 +41,7 @@ To start javascript assignments please follow the next steps:
     node_modules - app dependences restored by `npm install` command, you can delete this folder and restore later again.
     task - folder with tasks modules, it's your main folder.
     test - folder with tests modules to verify the tasks completion.
-</pre>
+
 
 ### How to implement assignments using TDD fashion
 Now you are ready to implement assignments. Tasks modules are located in the **task** folder. Each module consists of several tasks for specified topic. Each task is usually a regular function:

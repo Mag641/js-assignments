@@ -96,9 +96,12 @@ function timeSpanToString(startDate, endDate) {
  */
 function angleBetweenClockHands(date) {
     let dateObj = new Date(date);
-    let H = dateObj.getHours();
-    let M = dateObj.getMinutes();
-    return 0.5 * (60 * H - 11 * M) * (Math.PI/180);
+    let H = dateObj.getUTCHours();
+    H = H < 12 ? H : H - 12
+    let M = dateObj.getUTCMinutes();
+    let angleDeg = 0.5 * Math.abs(60 * H - 11 * M);
+    angleDeg = angleDeg < 180 ? angleDeg : 360 - angleDeg;
+    return angleDeg * Math.PI / 180
 }
 
 

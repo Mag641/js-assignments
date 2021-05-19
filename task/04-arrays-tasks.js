@@ -508,16 +508,7 @@ function getIdentityMatrix(n) {
  *     3, 3   => [ 3 ]
  */
 function getIntervalArray(start, end) {
-    let range = {
-        from: start,
-        to: end,
-        * [Symbol.iterator]() {
-            for (let value = this.from; value <= this.to; value++) {
-                yield value;
-            }
-        }
-    };
-    return Array.from(range, elem => +elem);
+    return new Array(end - start + 1).fill(0).map((_, index) => start + index);
 }
 
 /**
